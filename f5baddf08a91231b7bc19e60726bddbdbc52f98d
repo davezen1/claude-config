@@ -1,0 +1,27 @@
+settings-template.json
+  e78fe62e63195076 1-50
+README.md
+  e78fe62e63195076 1-59
+.gitignore
+  e78fe62e63195076 1
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.8",
+  "base_commit_sha": "f5baddf08a91231b7bc19e60726bddbdbc52f98d",
+  "prompts": {
+    "e78fe62e63195076": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "98dcb229-a9e9-4695-91d2-f3743e24c9ee",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "David Hodge <david.hodge@lucidtechnics.com>",
+      "messages": [],
+      "total_additions": 110,
+      "total_deletions": 0,
+      "accepted_lines": 110,
+      "overriden_lines": 0
+    }
+  }
+}
