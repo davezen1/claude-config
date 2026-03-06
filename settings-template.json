@@ -1,0 +1,50 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git *)",
+      "Bash(ls *)",
+      "Bash(find *)",
+      "Bash(cat *)",
+      "Bash(head *)",
+      "Bash(tail *)",
+      "Bash(wc *)",
+      "Bash(npm *)",
+      "Bash(yarn *)",
+      "Bash(bun *)",
+      "Bash(npx *)",
+      "Bash(pip *)",
+      "Bash(pytest *)",
+      "Bash(cargo *)",
+      "Bash(go test *)",
+      "Bash(make *)"
+    ],
+    "deny": [
+      "Read(.env*)",
+      "Read(*.pem)",
+      "Read(*.key)",
+      "Read(*.p12)",
+      "Read(*.pfx)",
+      "Read(*credentials*)",
+      "Read(*secret*)",
+      "Read(*token*)",
+      "Read(*.keychain)",
+      "Read(*.keystore)",
+      "Read(id_rsa*)",
+      "Read(id_ed25519*)",
+      "Read(id_ecdsa*)",
+      "Read(.npmrc)",
+      "Read(.pypirc)",
+      "Read(*.tfvars)",
+      "Read(~/.aws/*)",
+      "Read(~/.ssh/*)",
+      "Bash(cat *.env*)",
+      "Bash(cat *.pem)",
+      "Bash(cat *credentials*)",
+      "Bash(cat *secret*)",
+      "Bash(cat *token*)",
+      "Bash(cat id_rsa*)",
+      "Bash(cat ~/.aws/*)",
+      "Bash(cat ~/.ssh/*)"
+    ]
+  }
+}
