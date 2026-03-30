@@ -1,0 +1,23 @@
+README.md
+  960831f678bb3774 60,81
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.22",
+  "base_commit_sha": "bd26462a3ab8e6f78eb740075dc16c9172c581b4",
+  "prompts": {
+    "960831f678bb3774": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0d1b85b1-b40c-4c6f-ac1d-37b5bf3a7035",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "David Hodge <david.hodge@lucidtechnics.com>",
+      "messages": [],
+      "total_additions": 2,
+      "total_deletions": 4,
+      "accepted_lines": 2,
+      "overriden_lines": 0
+    }
+  }
+}
