@@ -163,7 +163,19 @@
       "Bash(rm -fr /)",
       "Bash(rm -fr /*)",
       "Bash(rm -fr ~)",
-      "Bash(rm -fr ~/*)"
+      "Bash(rm -fr ~/*)",
+      "Bash(rm -rf /System*)",
+      "Bash(rm -rf /Library*)",
+      "Bash(rm -rf /bin*)",
+      "Bash(rm -rf /sbin*)",
+      "Bash(rm -rf /tmp*)",
+      "Bash(rm -rf /Users*)",
+      "Bash(rm -fr /System*)",
+      "Bash(rm -fr /Library*)",
+      "Bash(rm -fr /bin*)",
+      "Bash(rm -fr /sbin*)",
+      "Bash(rm -fr /tmp*)",
+      "Bash(rm -fr /Users*)"
     ]
   }
 }
