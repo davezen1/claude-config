@@ -51,6 +51,11 @@ cp settings-template.json ~/.claude/settings.json
 | Registry auth | `.npmrc`, `.pypirc` | Package registry tokens |
 | Terraform | `*.tfvars` | Infrastructure secrets |
 | Cloud/SSH dirs | `~/.aws/*`, `~/.ssh/*` | Cloud credentials, SSH config |
+| Destructive rm (root) | `rm -rf /`, `rm -rf /*`, `rm -fr /`, `rm -fr /*` | Root filesystem |
+| Destructive rm (home) | `rm -rf ~`, `rm -rf ~/*`, `rm -fr ~`, `rm -fr ~/*` | Home directory |
+| Destructive rm (cwd) | `rm -rf .`, `rm -rf ./*`, `rm -rf ..` | Current working directory |
+| Destructive rm (git) | `rm -rf .git`, `rm -rf .git/*` | Git repository |
+| Destructive rm (system) | `rm -rf /etc*`, `rm -rf /usr*`, `rm -rf /var*`, `rm -rf /home*`, `rm -rf /Applications*`, `rm -rf /System*`, `rm -rf /Library*`, `rm -rf /bin*`, `rm -rf /sbin*`, `rm -rf /tmp*`, `rm -rf /Users*` (and `-fr` variants) | System directories |
 
 Deny rules cover both `Read(...)` and `Bash(cat ...)` patterns to prevent circumvention through alternative read methods.
 
@@ -71,4 +76,5 @@ Deny rules cover both `Read(...)` and `Bash(cat ...)` patterns to prevent circum
 
 - Deny rules are not exhaustive. Commands like `less`, `head`, `grep`, and other tools that can read file contents are not blocked via deny rules for sensitive file patterns.
 - `Bash(git *)` allows all git subcommands without prompting, including destructive operations like `git push --force`.
+- `Bash(rm *)` is allowed for local project use but guarded by deny rules for system directories (`/`, `/System`, `/Library`, `/bin`, `/sbin`, `/tmp`, `/Users`, `/etc`, `/usr`, `/var`, `/home`, `/Applications`, `~`, `.git`). The deny list may not cover all dangerous paths.
 - Use defense in depth: `.gitignore` to keep secrets out of repos, filesystem permissions to restrict access, and secret managers to avoid storing credentials in files.
