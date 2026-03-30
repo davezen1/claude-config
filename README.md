@@ -38,6 +38,8 @@ cp settings-template.json ~/.claude/settings.json
 | System management | `Bash(kill *)`, `Bash(chmod *)`, `Bash(tar *)`, `Bash(zip *)`, `Bash(unzip *)`, `Bash(echo *)`, `Bash(printf *)` | Process control, permissions, archives |
 | macOS utilities | `Bash(open *)`, `Bash(pbcopy *)`, `Bash(pbpaste *)` | Open files/URLs, clipboard |
 | Test runners | `Bash(npx playwright *)`, `Bash(npx cypress *)`, `Bash(npx jest *)`, `Bash(npx vitest *)`, `Bash(npx tsc *)`, `Bash(npx eslint *)`, `Bash(npx prettier *)`, `Bash(npx mocha *)`, `Bash(npx tsx *)` | Framework-specific test/lint runners |
+| Built-in tools | `Edit(*)`, `Write(*)`, `WebFetch(*)`, `WebSearch(*)`, `Agent(*)` | File editing, web access, subagent dispatch |
+| MCP tools | `mcp__plugin_playwright_playwright__*` | Playwright browser automation |
 
 ## Deny Rules
 

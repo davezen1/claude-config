@@ -116,7 +116,15 @@
       "Bash(npx eslint *)",
       "Bash(npx prettier *)",
       "Bash(npx mocha *)",
-      "Bash(npx tsx *)"
+      "Bash(npx tsx *)",
+
+      "Edit(*)",
+      "Write(*)",
+      "WebFetch(*)",
+      "WebSearch(*)",
+      "Agent(*)",
+
+      "mcp__plugin_playwright_playwright__*"
     ],
     "deny": [
       "Read(.env*)",
