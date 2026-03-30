@@ -17,12 +17,27 @@ cp settings-template.json ~/.claude/settings.json
 | Category | Pattern | Covers |
 |----------|---------|--------|
 | Git | `Bash(git *)` | All git subcommands |
-| Filesystem | `Bash(ls *)`, `Bash(find *)`, `Bash(cat *)`, `Bash(head *)`, `Bash(tail *)`, `Bash(wc *)` | Read-only file inspection |
-| Node.js | `Bash(npm *)`, `Bash(yarn *)`, `Bash(bun *)`, `Bash(npx *)` | Package management and scripts |
-| Python | `Bash(pip *)`, `Bash(pytest *)` | Package management and testing |
+| Filesystem (read) | `Bash(ls *)`, `Bash(find *)`, `Bash(cat *)`, `Bash(head *)`, `Bash(tail *)`, `Bash(wc *)` | Read-only file inspection |
+| Filesystem (write) | `Bash(rm *)`, `Bash(touch *)`, `Bash(tee *)`, `Bash(ln *)`, `Bash(cp *)`, `Bash(mv *)`, `Bash(mkdir *)`, `Bash(rsync *)` | File creation, deletion, copying |
+| Filesystem (inspect) | `Bash(file *)`, `Bash(stat *)`, `Bash(readlink *)`, `Bash(realpath *)` | File metadata inspection |
+| Text processing | `Bash(grep *)`, `Bash(rg *)`, `Bash(sed *)`, `Bash(awk *)`, `Bash(sort *)`, `Bash(uniq *)`, `Bash(cut *)`, `Bash(tr *)`, `Bash(diff *)`, `Bash(jq *)`, `Bash(yq *)`, `Bash(xargs *)`, `Bash(basename *)`, `Bash(dirname *)` | Search, transform, filter |
+| Text viewing | `Bash(less *)`, `Bash(more *)`, `Bash(xxd *)`, `Bash(od *)` | Paging and hex/octal dumps |
+| Node.js | `Bash(npm *)`, `Bash(yarn *)`, `Bash(bun *)`, `Bash(npx *)`, `Bash(node *)`, `Bash(deno *)` | JS/TS runtimes and package management |
+| Python | `Bash(python *)`, `Bash(python3 *)`, `Bash(pip *)`, `Bash(pip3 *)`, `Bash(uv *)`, `Bash(pytest *)`, `Bash(ruff *)`, `Bash(mypy *)`, `Bash(black *)`, `Bash(poetry *)` | Runtime, package management, linting |
 | Rust | `Bash(cargo *)` | Build, test, package management |
-| Go | `Bash(go test *)` | Test runner |
+| Go | `Bash(go *)` | Build, test, all subcommands |
+| Java | `Bash(java *)`, `Bash(javac *)`, `Bash(mvn *)`, `Bash(gradle *)`, `Bash(./gradlew *)` | Runtime, compiler, build systems |
+| Ruby | `Bash(ruby *)`, `Bash(gem *)`, `Bash(bundle *)` | Runtime, package management |
+| .NET | `Bash(dotnet *)` | Build, test, run |
+| Swift | `Bash(swift *)`, `Bash(swiftc *)` | Runtime and compiler |
 | Make | `Bash(make *)` | Build system |
+| Docker | `Bash(docker *)` | Container management |
+| Network | `Bash(curl *)`, `Bash(wget *)`, `Bash(ssh *)`, `Bash(scp *)`, `Bash(nc *)` | HTTP requests, remote access |
+| GitHub CLI | `Bash(gh *)` | Issues, PRs, releases |
+| System inspection | `Bash(lsof *)`, `Bash(df *)`, `Bash(du *)`, `Bash(uname *)`, `Bash(whoami *)`, `Bash(hostname *)`, `Bash(date *)`, `Bash(uptime *)`, `Bash(ps *)`, `Bash(which *)`, `Bash(env *)` | Process and system info |
+| System management | `Bash(kill *)`, `Bash(chmod *)`, `Bash(tar *)`, `Bash(zip *)`, `Bash(unzip *)`, `Bash(echo *)`, `Bash(printf *)` | Process control, permissions, archives |
+| macOS utilities | `Bash(open *)`, `Bash(pbcopy *)`, `Bash(pbpaste *)` | Open files/URLs, clipboard |
+| Test runners | `Bash(npx playwright *)`, `Bash(npx cypress *)`, `Bash(npx jest *)`, `Bash(npx vitest *)`, `Bash(npx tsc *)`, `Bash(npx eslint *)`, `Bash(npx prettier *)`, `Bash(npx mocha *)`, `Bash(npx tsx *)` | Framework-specific test/lint runners |
 
 ## Deny Rules
 
