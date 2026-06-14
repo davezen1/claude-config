@@ -1,0 +1,33 @@
+docs/superpowers/specs/2026-06-14-permissive-script-running-design.md
+  s_ffca0d0a622c5f::t_8701da789027e7 40
+  s_ffca0d0a622c5f::t_7c2de7ed193771 1-39,41-139
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "62d83b51d3a0b4102aa5831228ecc3edf24fd9e1",
+  "prompts": {
+    "8d5ea0c7f8a612bb": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "edc3236b-5908-40e1-bbf8-476bd0361dd3",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "David Hodge <dave@proteanfalcon.com>",
+      "total_additions": 1,
+      "total_deletions": 0,
+      "accepted_lines": 1,
+      "overriden_lines": 0
+    }
+  },
+  "sessions": {
+    "s_ffca0d0a622c5f": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "86c5327a-bbe5-4cfc-afc1-83e26def2cad",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "David Hodge <dave@proteanfalcon.com>"
+    }
+  }
+}
