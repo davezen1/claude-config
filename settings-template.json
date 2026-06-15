@@ -94,6 +94,7 @@
       "Bash(xargs *)",
       "Bash(basename *)",
       "Bash(dirname *)",
+      "Bash(source *)",
 
       "Bash(lsof *)",
       "Bash(df *)",
