@@ -1,0 +1,22 @@
+settings-template.json
+  8d5ea0c7f8a612bb 97
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "b7e785de582dd5f4e26981567b720e5035deccdb",
+  "prompts": {
+    "8d5ea0c7f8a612bb": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "edc3236b-5908-40e1-bbf8-476bd0361dd3",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "David Hodge <dave@proteanfalcon.com>",
+      "total_additions": 0,
+      "total_deletions": 0,
+      "accepted_lines": 1,
+      "overriden_lines": 0
+    }
+  }
+}
